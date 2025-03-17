@@ -19,7 +19,8 @@ ul {
 }
 
 .content-box {
-  width: 67.5%;
+  max-width: 1026px;
+  width: 100%;
   margin: 60px 0;
 }
 
@@ -32,8 +33,9 @@ section {
   display: none !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .content-box {
+    min-width: none;
     width: 100%;
     margin: 60px 12px;
   }
@@ -48,6 +50,22 @@ header {
 header ul {
   display: flex;
   gap: 3rem;
+}
+header .menu-item {
+  position: relative;
+}
+header .menu-item::after {
+  content: " ";
+  position: absolute;
+  left: -25%;
+  bottom: -0.5rem;
+  width: 150%;
+  border-bottom: 1px solid #000000;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+header .menu-item:hover::after {
+  transform: scale(1);
 }
 header div {
   display: flex;
@@ -234,7 +252,7 @@ header div .rwd-toggle-show {
      object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .intro-card {
     background: radial-gradient(109.24% 109.24% at 50% 50%, #000000 0%, #2A2A2A 22%, #000000 36.5%, #012022 70.5%, #000000 84.5%, #000000 100%);
   }
@@ -267,9 +285,12 @@ header div .rwd-toggle-show {
   background-color: #404040;
   display: flex;
   justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .contact-card .content-box {
   margin-block: 65px;
+  height: 684px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,6 +298,7 @@ header div .rwd-toggle-show {
 }
 .contact-card .content-box .col-1 {
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
 }
 .contact-card .content-box .col-1 img {
@@ -348,11 +370,19 @@ header div .rwd-toggle-show {
 .contact-card .content-box .col-2 form button {
   align-self: flex-end;
   padding: 6px 12px;
+  outline-style: none;
+  border: none;
+  border-radius: 4px;
+}
+.contact-card .content-box .col-2 form button:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .contact-card .content-box {
     flex-direction: column-reverse;
+    height: auto;
   }
   .contact-card .content-box .col-1 {
     gap: 1rem;

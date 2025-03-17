@@ -4,15 +4,17 @@
     background-color: $theme-color-light-gray;
     display: flex;
     justify-content: center;
+    height: fit-content;
     .content-box{
         margin-block: 65px;
-
+        height: 684px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
         .col-1{
             display: flex;
+            justify-content: center;
             gap: 1.5rem;
             img{
                 width: 306px;
@@ -80,16 +82,24 @@
                 button{
                     align-self: flex-end;
                     padding: 6px 12px;
+                    outline-style: none;
+                    border: none;
+                    border-radius: 4px;
+                }
+                button:hover{
+                    background-color: $theme-color-black;
+                    color: $theme-color-white;
                 }
             }
         }
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:1100px) {
     .contact-card{
         .content-box{
             flex-direction: column-reverse;
+            height: auto;
             .col-1{
                 gap: 1rem;
                 width: inherit;

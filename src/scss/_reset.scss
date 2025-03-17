@@ -18,7 +18,8 @@ ul{
 
 .content-box{
     // border: 1px solid white;
-    width: 67.5%;
+    max-width: 1026px;
+    width: 100%;
     margin: 60px 0;
 }
 
@@ -31,8 +32,9 @@ section{
     display: none !important;
 }
 
-@media (max-width:768px) {
+@media (max-width:1100px) {
     .content-box{
+        min-width: none;
         width: 100% ;
         margin: 60px 12px ;
     }

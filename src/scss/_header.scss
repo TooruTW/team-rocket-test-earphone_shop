@@ -10,6 +10,22 @@ header{
         display: flex;
         gap: 3rem;
     }
+    .menu-item{
+        position: relative;
+    }
+    .menu-item::after{
+        content: " ";
+        position: absolute;
+        left: -25%;
+        bottom: -0.5rem;
+        width: 150%;
+        border-bottom: 1px solid $theme-color-black;
+        transform: scale(0);
+        transition: all 0.5s ease;
+    }
+    .menu-item:hover::after{
+        transform: scale(1);
+    }
     div{
         display: flex;
         gap: 12px;
