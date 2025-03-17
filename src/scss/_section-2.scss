@@ -1,0 +1,54 @@
+@use "variables" as *;
+
+.new-product-card{
+    background-color: $theme-color-gray;
+    display: flex;
+    justify-content: center;
+    .content-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        h2{
+            font-size: 2rem;
+            font-weight: $font-wight-type1;
+            color: $theme-color-white;
+        }
+        .product-card-container{
+            width: 100%;
+            display: flex;
+            gap: 1.5rem;
+            div{
+                color: $theme-color-white;
+                font-weight: $font-wight-type1;
+                font-size: 1rem;
+                img{
+                    width: 100%;
+                    height: 457px;
+                    object-fit: cover;
+                    margin-bottom: 1.5rem;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .new-product-card{
+        @include theme-background-linear;
+
+        .content-box{
+            .product-card-container{
+                flex-direction: column;
+                gap: 3rem;
+                div{
+                    font-size: 1rem;
+                    img{
+                        height: 351px;
+                    }
+                }
+            }
+        }
+    }
+}
