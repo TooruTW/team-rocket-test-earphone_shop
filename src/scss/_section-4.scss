@@ -1,0 +1,113 @@
+@use "variables" as *;
+
+.contact-card{
+    background-color: $theme-color-light-gray;
+    display: flex;
+    justify-content: center;
+    .content-box{
+        margin-block: 65px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        .col-1{
+            display: flex;
+            gap: 1.5rem;
+            img{
+                width: 306px;
+                height: 306px;
+                object-fit: cover;
+            }
+            .img-adjust{
+                object-position: bottom;
+            }
+            .inner-col{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            .left{
+                padding-top: 3rem;
+            }
+            .right{
+                padding-bottom: 3rem;
+            }
+        }
+        .col-2{
+            color: $theme-color-white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    font-size: 2rem;
+                    font-weight: $font-wight-type1;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 4px;
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: $font-wight-type2;
+                    margin-bottom: 1.5rem;
+                    p{
+                        line-height: 1.5;
+                    }
+                    input{
+                        outline-style: none;
+                        width: 100%;
+                        padding: 16px 12px;
+                        background-color: transparent;
+                        border-radius: 4px;
+                        border: 1px solid $theme-color-white;
+                        font-size: 1rem;
+                    }
+                }
+                button{
+                    align-self: flex-end;
+                    padding: 6px 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .contact-card{
+        .content-box{
+            flex-direction: column-reverse;
+            .col-1{
+                gap: 1rem;
+                width: inherit;
+                img{
+                    width: 168px ;
+                    height: 168px ;
+                }
+            }
+            .col-2{
+                width: inherit;
+                form{
+                    button{
+                        width: 100%;
+                        padding-block: 1rem;
+                    }
+                }
+            }
+        }
+    
+    }
+}
