@@ -263,6 +263,113 @@ header div .rwd-toggle-show {
     flex-direction: column;
   }
 }
+.contact-card {
+  background-color: #404040;
+  display: flex;
+  justify-content: center;
+}
+.contact-card .content-box {
+  margin-block: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.contact-card .content-box .col-1 {
+  display: flex;
+  gap: 1.5rem;
+}
+.contact-card .content-box .col-1 img {
+  width: 306px;
+  height: 306px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact-card .content-box .col-1 .img-adjust {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.contact-card .content-box .col-1 .inner-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact-card .content-box .col-1 .left {
+  padding-top: 3rem;
+}
+.contact-card .content-box .col-1 .right {
+  padding-bottom: 3rem;
+}
+.contact-card .content-box .col-2 {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.contact-card .content-box .col-2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-card .content-box .col-2 div h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.contact-card .content-box .col-2 form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.contact-card .content-box .col-2 form div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.contact-card .content-box .col-2 form div p {
+  line-height: 1.5;
+}
+.contact-card .content-box .col-2 form div input {
+  outline-style: none;
+  width: 100%;
+  padding: 16px 12px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  font-size: 1rem;
+}
+.contact-card .content-box .col-2 form button {
+  align-self: flex-end;
+  padding: 6px 12px;
+}
+
+@media (max-width: 768px) {
+  .contact-card .content-box {
+    flex-direction: column-reverse;
+  }
+  .contact-card .content-box .col-1 {
+    gap: 1rem;
+    width: inherit;
+  }
+  .contact-card .content-box .col-1 img {
+    width: 168px;
+    height: 168px;
+  }
+  .contact-card .content-box .col-2 {
+    width: inherit;
+  }
+  .contact-card .content-box .col-2 form button {
+    width: 100%;
+    padding-block: 1rem;
+  }
+}
 footer {
   padding: 60px 0;
   color: #ffffff;
@@ -278,7 +385,8 @@ footer hr {
   width: 100px;
 }
 footer .footer-icon-container {
-  width: 10rem;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 footer .footer-icon-container div {
   margin-top: 1.5rem;
@@ -303,6 +411,7 @@ footer .footer-text-container ul {
     display: none;
   }
   footer .footer-text-container {
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
