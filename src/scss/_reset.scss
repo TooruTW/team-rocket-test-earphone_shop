@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+ul{
+    list-style: none;
+}
+
+.content-box{
+    border: 1px solid white;
+    width: 67.5%;
+    margin: 60px 0;
+}
+
+section{
+    width: 100%;
+    height: auto;
+}
+
+.hidden{
+    display: none !important;
+}
+
+@media (max-width:768px) {
+    .content-box{
+        width: 100%;
+        
+        margin: 60px 12px;
+    }
+}

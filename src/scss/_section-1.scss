@@ -1,0 +1,43 @@
+@use "variables" as *;
+
+.main-card{
+    display: flex;
+    justify-content: center;
+    color: $theme-color-white;
+    background-color: $theme-color-black;
+    align-items: center;
+
+    .content-box{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 514px;
+        background-image: url("https://s3-alpha-sig.figma.com/img/d94f/26b4/eb1e7a227284a361d122323e9d4dc3f2?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JPke6DvtFXzdx-6MpsyeJbLHuOq3ZzQy-PvaLzuJUzM4QwCxsW8sw~KcRLXIs4na~Gdko52Rwe2lbTgJiRbB6WIbAjCGSBCylD4kHRdlTPq5iVGaC2-CX76u51VJ7KME0Y4SyAygRXghl4xbkr596iZqsWqueCpZxRb55wKAOu1Bf6nxUHmFhRDBcbFFY7AGRjr-D-8utL4rOmre3iVqulf09RQQrnEZCrljaqM0gpAzqlPSwLUcvKkJ41R~tDOuZb1hAsKzKEEpvRDNKqoYvw3at8VMgGAxqov5xwKEvCah7k3Bd-oUhCs8yrXGTkKcP25NNePD3H1UzQ7cdNZyoQ__");
+        background-size: 85%;
+        background-position: -250px;
+        background-repeat: no-repeat;
+        div{
+            
+            h1{
+                font-size: 2.5rem;
+                font-weight: $font-wight-type1;
+            }
+            p{
+                font-size: 1rem;
+                font-weight: $font-wight-type2;
+            }
+            max-width: 636px;
+            z-index: 1;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .main-card{
+        .content-box{
+            align-items: end;
+            background-size: cover;
+            background-position: -55px;
+        }
+    }
+}

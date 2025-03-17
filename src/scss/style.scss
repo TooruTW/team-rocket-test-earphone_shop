@@ -1,16 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-$font-wight-type1:500;
-$font-wight-type2:400;
-$theme-color-black:"＃000000";
+@use "variables" as *;
+@use "reset";
+@use "header";
+@use "section-1";
+@use "footer";
 
-@mixin theme-background-linear{
-    background:linear-gradient(#000000, #404040);
-}
 
-:root{
-    font-family: "Noto Sans TC", sans-serif;
-}
+
+
+
+
+
+
+
+
