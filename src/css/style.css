@@ -19,7 +19,6 @@ ul {
 }
 
 .content-box {
-  border: 1px solid white;
   width: 67.5%;
   margin: 60px 0;
 }
@@ -90,10 +89,11 @@ header div .rwd-toggle-show {
   height: 514px;
   background-image: url("https://s3-alpha-sig.figma.com/img/d94f/26b4/eb1e7a227284a361d122323e9d4dc3f2?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JPke6DvtFXzdx-6MpsyeJbLHuOq3ZzQy-PvaLzuJUzM4QwCxsW8sw~KcRLXIs4na~Gdko52Rwe2lbTgJiRbB6WIbAjCGSBCylD4kHRdlTPq5iVGaC2-CX76u51VJ7KME0Y4SyAygRXghl4xbkr596iZqsWqueCpZxRb55wKAOu1Bf6nxUHmFhRDBcbFFY7AGRjr-D-8utL4rOmre3iVqulf09RQQrnEZCrljaqM0gpAzqlPSwLUcvKkJ41R~tDOuZb1hAsKzKEEpvRDNKqoYvw3at8VMgGAxqov5xwKEvCah7k3Bd-oUhCs8yrXGTkKcP25NNePD3H1UzQ7cdNZyoQ__");
   background-size: 85%;
-  background-position: -250px;
+  background-position: -120%;
   background-repeat: no-repeat;
 }
 .main-card .content-box div {
+  width: 50%;
   max-width: 636px;
   z-index: 1;
 }
@@ -111,6 +111,60 @@ header div .rwd-toggle-show {
     align-items: end;
     background-size: cover;
     background-position: -55px;
+  }
+  .main-card .content-box div {
+    width: 100%;
+  }
+}
+.new-product-card {
+  background-color: #2B2B2B;
+  display: flex;
+  justify-content: center;
+}
+.new-product-card .content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.new-product-card .content-box h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.new-product-card .content-box .product-card-container {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+}
+.new-product-card .content-box .product-card-container div {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.new-product-card .content-box .product-card-container div img {
+  width: 100%;
+  height: 457px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1.5rem;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 768px) {
+  .new-product-card {
+    background: linear-gradient(to right, #000000, #404040);
+  }
+  .new-product-card .content-box .product-card-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .new-product-card .content-box .product-card-container div {
+    font-size: 1rem;
+  }
+  .new-product-card .content-box .product-card-container div img {
+    height: 351px;
   }
 }
 footer {

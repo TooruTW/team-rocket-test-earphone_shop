@@ -2,9 +2,10 @@ $font-wight-type1:500;
 $font-wight-type2:400;
 $theme-color-black:#000000;
 $theme-color-white:#ffffff;
+$theme-color-gray:#2B2B2B;
 
 @mixin theme-background-linear{
-    background:linear-gradient(#000000, #404040);
+    background:linear-gradient(to right,#000000, #404040);
 }
 @mixin testing-border{
     border: 1px solid black;
