@@ -3,6 +3,7 @@ $font-wight-type2:400;
 $theme-color-black:#000000;
 $theme-color-white:#ffffff;
 $theme-color-gray:#2B2B2B;
+$theme-color-light-gray:#404040;
 
 @mixin theme-background-linear{
     background:linear-gradient(to right,#000000, #404040);

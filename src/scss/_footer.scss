@@ -15,7 +15,7 @@ footer{
         width: 100px;
     }
     .footer-icon-container{
-        width: 10rem;
+        width: fit-content;
         div{
             margin-top: 1.5rem;
             display: flex;
@@ -43,6 +43,7 @@ footer{
         }
 
     .footer-text-container{
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
